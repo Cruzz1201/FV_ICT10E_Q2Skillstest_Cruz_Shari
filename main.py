@@ -38,7 +38,7 @@ def search_element(e):
 
     #display the result in html
     #symbol, name, atomic#, atomic mass
-    document.getElementById("symbol").innerText = Element1
+    document.getElementById("symbol").innerText = Element0
     document.getElementById("name").innerText = result[0]
     document.getElementById("number").innerText = result[1]
     document.getElementById("mass").innerText = result[2]
