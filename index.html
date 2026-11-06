@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>ICT 10 Skillstest</title>
+
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/ef/1d/42/ef1d427563f9971b0766c19e0ef3b981.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 15px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
+            
+        }
+
+        #footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 25px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(88, 77, 61, 0.728);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+    <div class="container" style="background-color: rgba(242, 246, 250, 0.717);">
+
+        <h1 style="color: rgb(239, 224, 210); text-shadow: 3px 3px 3px #523417;"><b>Periodic Table Information</b></h1>
+
+        <details class="ontoggle"  style="text-align: center">
+            <summary>Click here for instructions!</summary>
+                 <p id="instructions"></p>
+        </details>
+
+        <br>
+
+        <div class="container" style="border-radius: 10px; margin-top: 25px; width: 360px; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
+
+            <div class="col" style="color: White;">
+                <div class="row">
+                    <input id="element1" type="text" style="width: 350px;" placeholder="Enter element symbol here..." class="form-control" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row" id="buttons" style="align-items: center;">
+
+                <button type="button" py-click="search_element" style="background-color: rgba(247, 243, 232, 0.61); color: rgb(115, 86, 43); width:150px; text-align: center; border-radius: 5px; border: inset; margin-left: 10px;">Enter</button>
+
+
+                <button type="reset" style="background-color:rgba(247, 243, 232, 0.61); color: rgb(115, 86, 43); width:150px; text-align: center; border-radius: 5px; border: inset; margin-left: 10px;" onclick="window.location.reload()">Clear</button>
+            </div>
+
+            <br>
+
+        </div>
+    </div>
+
+    <div class="result" style="border-radius: 10px; margin-top: 25px; width: 360px; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
+
+            <h3>Search Results</h3>
+
+            <p><b>Element Symbol:</b><span id='symbol'></span></p>
+            <p><b>Element Name:</b><span id='name'></span></p>
+            <p><b>Element Number:</b><span id='number'></span></p>
+            <p><b>Element Mass:</b><span id='mass'></span></p>
+
+    </div>
+
+        <div class="row">
+            <p style="color: rgb(253, 251, 251); font-size: medium; text-align: center;"><b></b></p>
+
+            <script type= "py" src="main.py"></script>
+        </div>
+
+    </center>
+
+    <div id="footer">
+        <p> ©2026 Seatwork 1 | Created by Shari Cruz, 10 - Emerald | Quarter 2 </p>
+    </div>
+
+    <script>
+        document.getElementById("instructions").innerHTML = "Enter the symbol of an element to search.";
+    </script>
+
+
+   
+    
+
+
+
+
+   
+
+
+</body>
+</html>
